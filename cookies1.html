@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amel Office, Cookies</title>
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Style.css-->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Favicon link-->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="home">
+        <div class="navbar">
+            <nav>
+                <div style="display: flex; align-items: center;">
+                    <a href="index.html" style="display: flex; align-items: center; text-decoration: none; color: white;">
+                      <img src="./favicon.ico" alt="Logo" style="height: 40px; margin-right: 8px; display: block;">
+                      <span style="font-size: 20px; font-weight: bold; line-height: 1;">Amel Office</span>
+                    </a>
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" target="_self" style="color: #ffffff;background-color: #6D6E89; padding: 6px 6px 6px 6px; border-radius: 5px;" >Login</a></li>
+                    <li><a href="register.html" target="_self" style="color: #ffffff;background-color: #6D6E89; padding: 6px 6px 6px 6px; border-radius: 5px;">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div  class="cookies1">
+            <br><br><br><br><h1>Cookie-Richtlinie</h1>
+            <p>Unsere Website verwendet Cookies, um Ihre Erfahrung zu verbessern. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.</p>
+    
+            <h2>Was sind Cookies?</h2>
+            <p>Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie unsere Website besuchen. Sie helfen uns, Ihre Erfahrung auf der Website zu verbessern.</p>
+    
+            <h2>Welche Cookies verwenden wir?</h2>
+            <ul>
+                <li><strong>Notwendige Cookies:</strong> Diese Cookies sind erforderlich, damit die Website funktioniert.</li>
+                <li><strong>Analyse-Cookies:</strong> Diese helfen uns, Daten darüber zu sammeln, wie Nutzer die Website verwenden.</li>
+                <li><strong>Marketing-Cookies:</strong> Diese Cookies helfen uns, relevante Werbung basierend auf Ihren Interessen anzuzeigen.</li>
+            </ul>
+    
+            <h2>Wie können Sie Cookies kontrollieren?</h2>
+            <p>Sie können Cookies über die Einstellungen Ihres Browsers kontrollieren. Sie können Cookies auch jederzeit von Ihrem Gerät löschen, aber dies kann Ihre Nutzung der Website beeinträchtigen.</p>
+    
+            <h2>Kontakt</h2>
+            <p>Wenn Sie Fragen zu dieser Cookie-Richtlinie haben, können Sie uns gerne per E-Mail kontaktieren: </p><br><a href="https://workspace.google.com/intl/de/gmail/" style="color: rgb(44, 133, 94);" target="_blank">info@aimanomar.de</a>
+        </div>
+    </header>
+    <!-- End Header -->
+    <main> 
+
+        <!-- Start cookies -->
+        <div id="cookieConsent" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #333; color: #fff; text-align: center; padding: 10px;">
+            <p>Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die Nutzung der Website stimmen Sie der Verwendung von Cookies zu. <a href="mehrErfahren.html" target="_blank" style="color: #ff8800;">Mehr erfahren</a>.</p>
+            <button id="acceptCookies" style="background-color: #ff8800; border: none; padding: 5px 10px;">Akzeptieren</button>
+            <button id="declineCookies" style="background-color: #ff8800; border: none; padding: 5px 10px;">Ablehnen</button>
+        </div>
+        
+        <script>
+          document.getElementById('acceptCookies').onclick = function() {
+            document.getElementById('cookieConsent').style.display = 'none';
+            localStorage.setItem('cookieConsent', 'true');
+          };
+        
+          if (localStorage.getItem('cookieConsent')) {
+            document.getElementById('cookieConsent').style.display = 'none';
+          }
+        </script>
+        <!-- Start cookies -->
+    </main>
+    <!-- Start Footer -->
+    <footer id="footer">
+        <p class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="imprint1.html" target="_blank">Imprint</a>
+            <a href="cookies1.html" target="_blank" >Cookies </a>
+            <a href="privacy1.html" target="_blank">Privacy </a>
+            <a href="reportAProblem1.html" target="_blank">Report a peoblem</a>
+
+
+            
+        </p>
+        <p class="copyright">© Copyright 2025 Amel Office | All rights reserved </p>
+    </footer>
+    <!-- End Footer -->
+    <script src="script.js"></script>
+</body>
+</html>
